@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background: url("../images/bg.jpg") fixed;
+    background-size: cover;
+}
+
+body{
+    background-color: black;
+    opacity: 80%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.Maindiv{
+    display: grid;
+    grid-template-columns: 19% 19% 24% 19% 19%;
+    grid-template-rows: auto;
+    grid-template-areas: "Kaarten Bord nav Strategy friendlist";
+}
+
+
+#friends{
+    grid-area: friendlist;
+    background-color: #17011c;
+    border-radius: 50px;
+    border: mediumaquamarine 3px solid;
+    margin-top: 15%;
+    margin-right: 10%;
+    height: 750px;
+}
+
+#first{
+    color: mediumaquamarine;
+    border-bottom: mediumaquamarine solid 8px;
+    text-align: center;
+    padding: 5%;
+    font-size: 28px;
+}
+ul{
+    list-style: none;
+}
+
+li{
+    margin-top: 3%;
+    font-size: 24px;
+    color: mediumaquamarine;
+    padding-left: 10px;
+
+}
+
+#online{
+    background-color: #14f900;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+}
+
+#offline{
+    background-color: darkslategrey;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+}
+
+.offline{
+    color: darkslategrey;
+    margin-top: 50px;
+}
+
+.online{
+    color: #14f900;
+}
+
+.name{
+    padding-left: 50px;
+}
+
+
+.games{
+    background-color: #17011c;
+    opacity: 85%;
+    width: 70%;
+    margin: 2% 15%;
+    border-radius: 50px;
+    border: mediumaquamarine solid 3px;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: inline-block;
+}
+
+.games img{
+    width: 80%;
+}
+
+.games input[type=button]{
+    color: mediumaquamarine;
+    background-color: rgba(74,6,148,1);
+    padding: 2% 5%;
+    border: solid mediumaquamarine 5px;
+    border-radius: 25px;
+    margin-top: 2%;;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.games input[type=button]:hover {
+    color: rgba(74,6,148,1);
+    background-color: mediumaquamarine;
+    border: solid rgba(74,6,148,1) 5px;
+}
+h1{
+    color: mediumaquamarine;
+    margin-bottom: 4%;
+    text-decoration: underline;
+}
+
+.middle{
+    background-color: black;
+    opacity: 80%;
+}
+
+.categorie{
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 44px;
+}
+
+nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10%;
+    height: 750px;
+
+}
+
+nav > input[type=button]{
+    background-color: transparent;
+    color: mediumaquamarine;
+    font-size: 32px;
+    border: none;
+    padding: 7%;
+    height: 100%;
+}
+
+nav > input[type=button]:hover{
+    color: rgba(74,6,148,1);
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: mediumaquamarine;
+}
+
+#logo{
+    width: 100%;
+    margin-bottom: -20%;
+}
+
+#Kaartgames{
+    display: flex;
+    flex-direction: column;
+    grid-area: Kaarten;
+    text-align: center;
+}
+
+#Bordgames{
+    display: flex;
+    flex-direction: column;
+    grid-area: Bord;
+    text-align: center;
+}
+
+#Strategy{
+    display: flex;
+    flex-direction: column;
+    grid-area: Strategy;
+    text-align: center;
+}
